@@ -3,9 +3,9 @@ import path from "path";
 
 let data;
 const DJANGO_MODULES = path.join("django");
-const DJANGO_OUTPUT_FILE = "django.json";
+const DJANGO_OUTPUT_FILE = path.join("dist", "django.json");
 const REACT_NATIVE_MODULES = path.join("react-native");
-const REACT_NATIVE_OUTPUT_FILE = "react-native.json";
+const REACT_NATIVE_OUTPUT_FILE = path.join("dist", "react-native.json");
 const ACCEPTED_EXTENSIONS = [".json", ".js", ".ts", ".jsx", ".tsx", ".md", ".py"];
 
 const parseDir = dir => {
