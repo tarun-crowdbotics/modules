@@ -1,7 +1,7 @@
 # Crowdbotics Modules
 
 This is a monorepo which holds the source code for the various modules we built,
-for tracking purposes and to ease the creation of new ones. There's a complete React Native custom template in [template](template). It also includes utilities for modules installation and removal.
+for tracking purposes and to ease the creation of new ones. There's a complete React Native custom template in [template](template/beta). It also includes utilities for modules installation and removal.
 
 # Table of contents
 
@@ -226,7 +226,7 @@ This section explains the mechanisms of this setup.
 
 A good place to start is our `metro.config.js` config:
 
-[template/source/metro/config.js](template/source/metro/config.js)
+[template/beta/source/metro/config.js](template/beta/source/metro/config.js)
 
 ```javascript
 /**
@@ -281,7 +281,7 @@ import modules from "@modules";
 
 And the default export of that module is just the components themselves:
 
-[template/source/src/modules/index.js](template/source/src/modules/index.js)
+[template/beta/source/src/modules/index.js](template/beta/source/src/modules/index.js)
 
 ```javascript
 import React from "react";
@@ -311,7 +311,7 @@ export default getModules();
 
 The `slices` get imported into our `store.js` setup
 
-[template/source/src/config/store.js](template/source/src/config/store.js)
+[template/beta/source/src/config/store.js](template/beta/source/src/config/store.js)
 
 ```javascript
 import {
@@ -352,7 +352,7 @@ export default store;
 
 All of this dependends on the manifest defined here:
 
-[template/source/src/modules/manifest.js](template/source/src/modules/manifest.js)
+[template/beta/source/src/modules/manifest.js](template/beta/source/src/modules/manifest.js)
 
 ```javascript
 export const modules = [];
@@ -437,7 +437,7 @@ export class ManifestTransformer {
 ## What's included
 
 Our template is on the latest React Native version (v0.63):
-[template/source/package.json](template/source/package.json)
+[template/beta/source/package.json](template/beta/source/package.json)
 
 ```json
   "dependencies": {
@@ -588,7 +588,7 @@ The example above is for an headless module (no screens), but you can export hoo
 > Key-value pairs that grant an executable permission to use a service or technology.
 
 Documentation - https://developer.apple.com/documentation/bundleresources/entitlements
-File - [ProjectName.entitlements](template/source/ios/ProjectName/ProjectName.entitlements)
+File - [ProjectName.entitlements](template/beta/source/ios/ProjectName/ProjectName.entitlements)
 
 **Examples**
 

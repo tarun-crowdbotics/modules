@@ -2,7 +2,7 @@ import path from "path";
 import { clean, execShellCommand } from "./utils.js";
 
 const APP_NAME = "demo";
-const template = path.join("file:/", process.cwd(), "template");
+const template = path.join("file:/", process.cwd(), "template", "beta");
 
 clean({ target: APP_NAME });
 execShellCommand(
