@@ -1,6 +1,6 @@
 // This file is used for translating RN template placeholders with
 // cookiecutter placeholders. Serves as a map between the two.
-module.exports = {
+export default {
   rn: {
     // Placeholder name that will be replaced in package.json, index.json, android/, ios/ for a project name.
     placeholderName: 'ProjectName',
