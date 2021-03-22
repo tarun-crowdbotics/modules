@@ -7,9 +7,11 @@ const replace = edit.changePlaceholderInTemplate;
 import ncp from "ncp";
 ncp.limit = 16;
 
-const COOKIECUTTER_DIRECTORY = "cookiecutter";
-const source = path.join(process.cwd(), "template");
+// cookie command accepts ouput and input directories, both are optional
+const COOKIECUTTER_DIRECTORY = process.argv.slice(2)[0] || path.join("dist", "latest");
+const INPUT_DIRECTORY = process.argv.slice(2)[1] || "template";
 const target = path.join(process.cwd(), COOKIECUTTER_DIRECTORY);
+const source = path.join(process.cwd(), INPUT_DIRECTORY);
 
 // cookiecutter.json content
 const COOKIECUTTER_JSON = {
@@ -24,8 +26,8 @@ const callback = (err) => {
   if (err) {
     return console.error(err);
   }
-  // Change to the cookiecutter directory first because replace uses process.cwd()
-  process.chdir("cookiecutter");
+  // Change to the target directory first because replace uses process.cwd()
+  process.chdir(target);
 
   replace({
     projectName: "{{cookiecutter.project_slug}}",
