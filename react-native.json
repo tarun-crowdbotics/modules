@@ -371,7 +371,7 @@
       "newFile": true
     },
     "package.json": {
-      "code": "{\n  \"name\": \"@modules/terms-and-conditions\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Terms and Conditions Screen\",\n  \"private\": true,\n  \"main\": \"index.js\",\n  \"author\": \"Crowdbotics\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"react-native-vector-icons\": \"^8.0.0\",\n    \"react-navigation-stack\": \"^2.10.2\"\n  }\n}\n",
+      "code": "{\n  \"name\": \"@modules/terms-and-conditions\",\n  \"version\": \"1.0.0\",\n  \"description\": \"Terms and Conditions Screen\",\n  \"private\": true,\n  \"main\": \"index.js\",\n  \"author\": \"Crowdbotics\",\n  \"license\": \"ISC\",\n  \"dependencies\": {\n    \"react-native-vector-icons\": \"^8.0.0\"\n  }\n}\n",
       "parentDir": null,
       "newFile": true
     },
