@@ -21,17 +21,24 @@ As a result, Crowdbotics can generate new applications automatically in a standa
 [Tech Support](https://crowdbotics.slack.com/archives/CGSAV319V)
 
 ## Table of Contents
-1. [Project Description](#project-description)
-2. [Project Structure](#project-structure)
-3. [Modules](#modules)
-4. [Getting Started: Frontend](#getting-started-frontend)
-   - [Installation](#installation)
-   - [Running with Fastlane](#running-with-fastlane)
-     - [Android](#android-1)
-     - [iOS](#ios-1)
-     - [React Native Web](#react-native-web)
-5. [Getting Started: Backend](backend#readme)
-6. [License](#license)
+- [ProjectName](#projectname)
+  - [What is Crowdbotics?](#what-is-crowdbotics)
+    - [Useful Links](#useful-links)
+  - [Table of Contents](#table-of-contents)
+  - [Project Description](#project-description)
+  - [Project Structure](#project-structure)
+  - [Modules (THIS SECTION IS AUTO-GENERATED, PLEASE DO NOT EDIT)](#modules-this-section-is-auto-generated-please-do-not-edit)
+- [Getting started: Frontend](#getting-started-frontend)
+  - [Installation](#installation)
+    - [Metro](#metro)
+    - [Android](#android)
+    - [iOS](#ios)
+    - [Setup react-native-vector-icons](#setup-react-native-vector-icons)
+  - [Running with Fastlane](#running-with-fastlane)
+    - [Android](#android-1)
+    - [iOS](#ios-1)
+  - [React Native Web](#react-native-web)
+- [License](#license)
 
 ## Project Description
 
@@ -45,8 +52,8 @@ As a result, Crowdbotics can generate new applications automatically in a standa
     ├── backend                 # Django backend REST API
     ├── ios                     # iOS native files
     ├── modules                 # Modules
-    ├── public                  
-    ├── screens                 
+    ├── public
+    ├── screens
     ├── store                   # Application state storage
     ├── ...
     ├── README.md
@@ -140,6 +147,8 @@ Please follow the steps
 - please run `yarn web-build`
 - the web_build folder is generated and copied to backend/ automatically. please commit/push the web_build folder to git
 
+
+__Scaffold Version:__ {{cookiecutter.scaffold_version}}
 # License
 The use of code in this repository is governed by Crowdbotics [Terms and Conditions](https://www.crowdbotics.com/terms-of-service).
 
