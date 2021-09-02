@@ -18,7 +18,7 @@ jobs:
 
       - name: Checkout
         run: |
-          git clone github.com:crowdbotics/modules.git
+          git clone https://github.com/crowdbotics/modules.git
 
       - name: Generate Json data
         working-directory: ${{ env.working-directory }}
